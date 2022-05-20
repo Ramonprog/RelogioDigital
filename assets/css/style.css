@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle at 91.66% 79.17%, #ffa900 0, #ff971f 10%, #ff852f 20%, #ff713a 30%, #ff5c42 40%, #f94646 50%, #e33049 60%, #cf1c4b 70%, #bd034d 80%, #ad0050 90%, #9e0054 100%);
+}
+.relogio{
+    height: 200px;
+    width: 650px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.685);
+    background-image: radial-gradient(circle at 91.66% 79.17%, #ffaa00ab 0, #ff971f 10%, #ff852f 20%, #ff713a 30%, #ff5c42 40%, #f94646 50%, #e33049 60%, #cf1c4b 70%, #bd034d 80%, #ad0050 90%, #9e0054 100%);
+}
+.cards{
+    height: 170px;
+    width: 180px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.685);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 100px;
+    letter-spacing: 3px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.082);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+.tempo{
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px){
+    .relogio{
+        height: 150px;
+        width: 500px;
+    }
+    .cards{
+        height: 130px;
+        width:150px ;
+        font-size: 80px;
+    }
+    .tempo{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .relogio{
+        height: 130px;
+        width: 450px;
+    }
+    .cards{
+        height: 110px;
+        width:130px ;
+        font-size: 60px;
+    }
+    .tempo{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .relogio{
+        height: 130px;
+        width: 410px;
+    }
+    .cards{
+        height: 100px;
+        width:120px ;
+        font-size: 60px;
+    }
+    .tempo{
+        font-size: 13px;
+    }
+}
